@@ -1,0 +1,3 @@
+name = Embedded Google Docs Viewer
+description = An embedded Document field using Google Docs
+core = 7.x
