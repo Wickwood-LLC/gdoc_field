@@ -65,14 +65,14 @@ function gdoc_field_field_formatter_view($entity_type, $entity, $field, $instanc
     case 'gdoc_field_embedded_doc':
       foreach ($items as $delta => $item) {
         $item_uri = $item['uri'];
-        if(file_uri_scheme($item_uri) == 'public') {
+        if (file_uri_scheme($item_uri) == 'public') {
           $url = file_create_url($item_uri);
           $encoded_url = urlencode($url);
           drupal_add_css(drupal_get_path('module', 'gdoc_field') . '/gdoc_field.css');
           $element[$delta]['#markup'] = '<iframe class="gdoc-field" src="http://docs.google.com/gview?embedded=true&url=' . $encoded_url . '"></iframe>';
         }
         else {
-          drupal_set_message(t('The file (%file) is not publicly accessable. It must be publicly available in order for the Google Docs viewer to be able to access it.', array('%file' => $item['filename'])),'error',FALSE);
+          drupal_set_message(t('The file (%file) is not publicly accessable. It must be publicly available in order for the Google Docs viewer to be able to access it.', array('%file' => $item['filename'])), 'error', FALSE);
         }
       }
       break;
