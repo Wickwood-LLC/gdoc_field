@@ -11,6 +11,11 @@
  * ".gdoc-field"
  */
 
+/**
+ * Implements hook_help(). 
+ *
+ * Describe the purpose and usage  of this module.
+ */
 function gdoc_field_help($path, $arg) {
   $helptext = '';
   switch ($path) {
@@ -37,15 +42,17 @@ function gdoc_field_help($path, $arg) {
 }
 
 /**
- * Implements hook_field_formatter_info_alter(). Add a new formatter to the
+ * Implements hook_field_formatter_info_alter(). i
+ *
+ * Add a new formatter to the
  * list of formatters available for the File field type.
  */
 function gdoc_field_field_formatter_info_alter(&$info) {
   $new_formatter = array(
-      'label' => t('Embedded Google Docs viewer'),
-      'field types' => array(0 => 'file', ),
-      'settings' => array(),
-      'module' => 'gdoc_field',
+    'label' => t('Embedded Google Docs viewer'),
+    'field types' => array(0 => 'file', ),
+    'settings' => array(),
+    'module' => 'gdoc_field',
   );
   $info['gdoc_field_embedded_doc'] = $new_formatter;
 }
