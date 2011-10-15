@@ -47,10 +47,10 @@ function gdoc_field_help($path, $arg) {
  */
 function gdoc_field_field_formatter_info_alter(&$info) {
   $new_formatter = array(
-      'label' => t('Embedded Google Docs viewer'),
+    'label' => t('Embedded Google Docs viewer'),
     'field types' => array(0 => 'file'),
-      'settings' => array(),
-      'module' => 'gdoc_field',
+    'settings' => array(),
+    'module' => 'gdoc_field',
   );
   $info['gdoc_field_embedded_doc'] = $new_formatter;
 }
