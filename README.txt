@@ -18,4 +18,6 @@ for use on the conntent type's "Manage Display" tab.
 
 N.B.: Only files that are public may use this formatter - 
 Google Docs must be able to access the file in order to
-render and display it.
+render and display it. In other words, it won't work on 
+a typical development laptop, or if your server is
+behind a firewall where Google can't access it.
