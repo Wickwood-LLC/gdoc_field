@@ -1,8 +1,8 @@
 Drupal Embedded Google Docs Viewer module:
 ------------------------------------------
 Maintainer:
-  Jeff Markel (http://drupal.org/user/15171)
-Requires - Drupal 7
+  Jeff Markel (https://www.drupal.org/u/jmarkel)
+Requires - Drupal 8.0
 License - GPL (see LICENSE)
 
 The Embedded Google Docs Viewer is a module which
@@ -14,7 +14,7 @@ Powerpoint files (i.e. files suffixed with .pdf, .doc,
 
 After adding a File field to a Drupal content type,
 the Embedded Google Docs Viewer formatter may be selected
-for use on the conntent type's "Manage Display" tab.
+for use on the content type's "Manage Display" tab.
 
 N.B.: Only files that are public may use this formatter - 
 Google Docs must be able to access the file in order to
